@@ -43,9 +43,11 @@ round-avatar: true
 social-network-links:
   email: "4restwilliams@gmial.com"
   linkedin: forrest-williams-990586177
-  github: 4restwilliams
-  twitter: 4restwilliams
-  ORCID: 0000-0001-8721-6020
+#  github: 4restwilliams
+#  twitter: 4restwilliams
+#  ORCID: 0000-0001-8721-6020
+  researchgate: Forrest_Williams2
+  medium: "@4restwilliams"
 #  google-scholar: cATpHwsAAAAJ
 #  reddit: yourname
 #  facebook: deanattali
