@@ -14,8 +14,8 @@ author: Forrest Williams
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Research: ""
   About Me: "aboutme"
+  Research: ""
   CV: "2020-02-26-flake-it-till-you-make-it"
   Resources:
     - Blog: "https://beautifuljekyll.com"
