@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About me
+title: CV
 ---
 
-To do
+Coming soon

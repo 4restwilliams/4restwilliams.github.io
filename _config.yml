@@ -14,12 +14,13 @@ author: Forrest Williams
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
-  Projects: "projects"
-  CV: "2020-02-26-flake-it-till-you-make-it"
+  Home: "index"
+  About Me: "/pages/aboutme"
   Resources:
-    - Blog: "https://beautifuljekyll.com"
-    - Figures: "https://www.markdowntutorial.com/"
+    - Projects: "/pages/projects"
+    - CV: '/pages/cv'
+    - Blog: "/pages/blog"
+    - Figures: "/pages/figures"
 #  Author's home: "https://deanattali.com"
 
 # --- Logo --- #
