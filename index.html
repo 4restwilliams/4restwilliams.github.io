@@ -1,6 +1,36 @@
 ---
 layout: home
 title: Forrest Williams
-subtitle: Remote Sensing and Geomorphology PhD student at Massey University
 ---
-
+<img src="/assets/img/profileCircleSmall.png" alt="Profile" class="center" width="300" height="300"> 
+<br>
+<p class="center">
+    Hi I’m Forrest, an Earth Science PhD student at Massey University in New Zealand. My current research is focused on using Interferometric Synthetic Aperture Radar (InSAR) to track the movement of landslides, as well as identifying factors that influence the occurrence of these landslides.<br><br>
+    Before moving to New Zealand, I completed a master’s at Iowa State University where I studied the role that riverbank erosion plays in the health of Iowa’s rivers. A paper detailing the method we developed to track riverbank erosion was recently published in the journal Geomorphology and can be found <a href=https://doi.org/10.1016/j.geomorph.2020.107313>here</a>.<br><br>
+    I enjoy using remote sensing to track changes in the earth’s surface, and I look forward to continuing this work in the future. Scroll down to learn more about me and to connect with me on LinkedIn and ReasearchGate!
+</p>
+<br>
+<div class="container row">
+    <h1 class="cv-title"><span>{{ site.timeline-name }}</span></h1>
+    {% assign steps = site.steps | sort: 'date' %}
+    {% for step in steps %}
+    <div class="item">
+        <i class="vertical-line"></i>
+        <h2 class="item-date">{{ step.title }}</h2>
+        <div class="card-panel">
+            <h3 class="card-title">{{ step.date | date: '%Y' }}{% if step.enddate %} - {{ step.enddate | date: '%Y' }}{% endif %}</h3>
+            <p>{{ step.content }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+<br>
+<h1>Ongoing Projects:</h1>
+<p>Watch this space!</p>
+<br>
+<br>
+<br>
+<hr>
+<h1>More from Forrest Williams:</h1>
+<hr>
+<br>

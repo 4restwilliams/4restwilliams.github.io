@@ -6,7 +6,7 @@
 # --- Required options --- #
 
 # Name of website
-title: ""
+title: "Forrest William - PhD Earth Scientist"
 
 # Your name to show in the footer
 author: Forrest Williams
@@ -14,27 +14,35 @@ author: Forrest Williams
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Home: "index"
-  About Me: "/pages/aboutme"
-  Resources:
-    - Projects: "/pages/projects"
-    - CV: '/pages/cv'
-    - Blog: "/pages/blog"
-    - Figures: "/pages/figures"
+  #Home: "index"
+  #About Me: "/pages/aboutme"
+  Projects: "/pages/projects"
+  Figures: "/pages/figures"
+  Blog: "/pages/blog"
+#  Resources:
+#    - CV: '/pages/cv'
 #  Author's home: "https://deanattali.com"
+
+# --- Timeline --- #
+timeline-name: Education
+collections:
+  steps:
+    title: Steps
+    output: false
+
 
 # --- Logo --- #
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/cropped.png"
+#avatar: "/assets/img/cropped.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
-round-avatar: true
+#round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-#title-img: "/assets/img/profile.png"
+title-img: "/assets/img/profileCircle.png"
 
 
 # --- Footer social media links --- #
