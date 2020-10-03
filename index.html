@@ -1,15 +1,28 @@
 ---
-layout: home
+layout: page
 title: Forrest Williams
 ---
 <img src="/assets/img/profileCircleSmall.png" alt="Profile" class="center" width="300" height="300"> 
 <br>
 <p class="center">
-    Hi I’m Forrest, an Earth Science PhD student at Massey University in New Zealand. My current research is focused on using Interferometric Synthetic Aperture Radar (InSAR) to track the movement of landslides, as well as identifying factors that influence the occurrence of these landslides.<br><br>
-    Before moving to New Zealand, I completed a master’s at Iowa State University where I studied the role that riverbank erosion plays in the health of Iowa’s rivers. A paper detailing the method we developed to track riverbank erosion was recently published in the journal Geomorphology and can be found <a href=https://doi.org/10.1016/j.geomorph.2020.107313>here</a>.<br><br>
-    I enjoy using remote sensing to track changes in the earth’s surface, and I look forward to continuing this work in the future. Scroll down to learn more about me and to connect with me on LinkedIn and ReasearchGate!
+    Hi I’m Forrest, an American geomorphologist who uses remote sensing and field studies to track the movement
+    of sediment throughout large regions. I am currently pursuing a PhD at Massey University where I am monitoring 
+    the movement of large landslides across New Zealand.<br><br> In addition to my work, I am passionate about public science 
+    communication and am an avid runner. Continue reading to learn more about me and my current projects. 
+    You can also check out my latest paper <a href=https://doi.org/10.1016/j.geomorph.2020.107313>here</a>.
 </p>
-<br>
+<br><hr><br>
+<h1>Current Projects:</h1>
+<h2>Monitoring large landslides in New Zealand</h2>
+<p>Slow-moving landslides don’t pose a serious threat to human life, but they do impact the health of our rivers. While these landslides are common in New Zealand, little is known about these landslides because they are difficult to monitor. In my PhD I am using advanced remote sensing techniques, such as interferometric synthetic aperture radar (InSAR), to track these landslides and to assess their impact on New Zealand’s rivers.</p>
+<p><a href=/projects/slowlandslides>Learn More</a></p>
+<h2>Measuring the impact of riverbank erosion in Iowa</h2>
+<p>Riverbank erosion is an important source of pollutants to Iowa’s rivers, but are riverbanks a dominant source of pollution? My colleagues at Iowa State University and I are using both in-field and remote sensing techniques to determine if the amount of Phosphorus and sediment contributed by riverbank erosion is comparable to the amount that is contributed by eroding farm fields. For this project I developed <a href=https://doi.org/10.1016/j.geomorph.2020.107313>AIMM</a>, a remote sensing model that measures riverbank erosion over large regions.</p>
+<p><a href=https://doi.org/10.1016/j.geomorph.2020.107313>Read the Paper</a> | <a href=/projects/riverbanks>Learn More</a></p>
+<h2>Using Google Earth Engine to monitor farming practices in the Midwest</h2>
+<p>The <a href=https://www.dailyerosion.org>Daily Erosion Project</a> provides daily estimates of farmland erosion across the Midwest, but it needs to know how much plant material is present in farm fields in order to run. After collecting a massive amount of field data, we are now using the <a href=https://earthengine.google.com>Google Earth Engine</a> platform to develop and implement a remote sensing model to measure the amount of plant residue cover present in farm fields across the Midwest.</p>
+<p><a href=/projects/cropresidue>Learn More</a></p>
+<br><hr><br>
 <div class="container row">
     <h1 class="cv-title"><span>{{ site.timeline-name }}</span></h1>
     {% assign steps = site.steps | sort: 'date' %}
@@ -24,13 +37,4 @@ title: Forrest Williams
     </div>
     {% endfor %}
 </div>
-<br>
-<h1>Ongoing Projects:</h1>
-<p>Watch this space!</p>
-<br>
-<br>
-<br>
-<hr>
-<h1>More from Forrest Williams:</h1>
-<hr>
-<br>
+<br><hr><br>
