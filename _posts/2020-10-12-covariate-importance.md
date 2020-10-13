@@ -7,9 +7,9 @@ comments: false
 ---
 
 ## Regression Overview
-Logistic regression is commonly used to model to predict the presence or absence of features, which makes it well suited for the creation of landslide susceptibility models. In addition, logistic regression can be used to determine the importance of landslide susceptibility factors. The discussion below details my use of a logistic regression to determine the importance of landslide susceptibility for deep-seated landslides in the North Island.
+Logistic regression is a model commonly used to predict the presence or absence of features, which makes it well suited for the creation of landslide susceptibility models. In addition, logistic regressions can be used to determine the importance of the covariates included in the model. The discussion below details my use of a logistic regression analyis to determine which landslide susceptibility factors influence the occurence of deep-seated landslides in the North Island.
 
-First, a note on methods. For this analysis, a balanced dataset of roughly 1000 landslide occurences and 1000 landslide absences were used to train\test the logistic regression model, and 15 susceptibility factors were used as the explanatory variables. Before use in the model, these explanatory variables were first standardized using the formula:
+First, a note on methods. For this analysis, a balanced dataset of roughly 1000 landslide occurences and 1000 landslide absences was used to train\test the logistic regression model, and 15 susceptibility factors were used as the explanatory variables. Before use in the model, these explanatory variables were first standardized using the formula:
 <div align="center">
 <br>
 <a href="https://www.codecogs.com/eqnedit.php?latex=Standarized&space;Value&space;=&space;\frac{Value-Mean}{Standard&space;Deviation}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?Standarized&space;Value&space;=&space;\frac{Value-Mean}{Standard&space;Deviation}" title="Standarized Value = \frac{Value-Mean}{Standard Deviation}" /></a>
@@ -30,7 +30,7 @@ Overall the absolute values of the regression coefficients also decreased in thi
 {% include plotly/lr_coefficient.html %}
 
 ## Jacknife Regresions
-In addition coefficent magnitude, coviariate importance can also be assessed using jacknife regressions. This procedure looks at value of the model's AUC when each coviariate is used inidividually, and when all covariates except one are used. In the former case, high AUCs point to importance variables and in the latter case the opposite is true.
+In addition to coefficent magnitude, coviariate importance can also be assessed using jacknife regressions. This procedure looks at value of a model's AUC when each coviariate is used inidividually, and when all covariates except one are used. In the former case, high AUCs point to important variables and in the latter case the opposite is true.
 {% include plotly/lr_jth.html %}
 {% include plotly/lr_allbutjth.html %}
-My interpretaion is that this analysi points to three groups of significant covariates which also fit neatly into susceptibility factor categories. The most influential group includes only the bedrock geology covariate and is associated with the long-term strength of terrain. The medium influential group contains slope, bedding alignment, and incison, and is associated with current to recent-past landscape evolution. And finally, the least influential group includes profile curvature and surface roughness, which do not cause landslide occurrence, but rather increase as a result.
+My interpretaion of this data is the significant landslide susceptibility factors identifed in this analysis can broadly be put into three groups. The most influential group includes only the bedrock geology covariate and is associated with the long-term strength of terrain. The medium influential group contains slope, bedding alignment, and incison, and is associated with current to recent-past landscape evolution. And finally, the least influential group includes profile curvature and surface roughness, which do not cause landslide occurrence, but rather increase as a result.
