@@ -34,3 +34,9 @@ In addition to coefficent magnitude, coviariate importance can also be assessed 
 {% include plotly/lr_jth.html %}
 {% include plotly/lr_allbutjth.html %}
 My interpretaion of this data is that the significant landslide susceptibility factors identifed in this analysis can broadly be put into three groups. The most influential group includes only the bedrock geology covariate and is associated with the long-term strength of terrain. The medium influential group contains slope, bedding alignment, and incison, and is associated with current to recent-past landscape evolution. And finally, the least influential group includes profile curvature and surface roughness, which do not cause landslide occurrence, but rather increase as a result.
+
+## Principal Components Analysis
+Using a PCA analysis of the significant covariates, no discernible differences between the three major landslide classes was found.
+{% include plotly/lr_pca.html %}
+Nor was this the case when the data is viewed in terms of landslide size.
+{% include plotly/lr_pca_size.html %}
