@@ -1,6 +1,6 @@
 ---
 layout: home-onlyshow
-title: Figures
+title: Short Reports
 onlyshow: figures
 ---
-Browse through the list of figures I've compiled from my various projects.
+Here you can find short reports that I've shared with my PhD supervisory team. Currently, they focus on my landslide susceptibiltiy factor analysis.

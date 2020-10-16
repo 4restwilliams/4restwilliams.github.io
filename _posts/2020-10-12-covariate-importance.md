@@ -7,7 +7,7 @@ comments: false
 ---
 
 ## Regression Overview
-Logistic regression is a model commonly used to predict the presence or absence of features, which makes it well suited for the creation of landslide susceptibility models. In addition, logistic regressions can be used to determine the importance of the covariates included in the model. The discussion below details my use of a logistic regression analyis to determine which landslide susceptibility factors influence the occurence of deep-seated landslides in the North Island.
+Logistic regressions are commonly used to predict the presence or absence of features, which makes them well suited for the creation of landslide susceptibility models. In addition, logistic regressions are used to determine the importance of the covariates included in the model. The discussion below details my use of a logistic regression analysis to determine which landslide susceptibility factors influence the occurence of deep-seated landslides in the North Island of New Zealand.
 
 First, a note on methods. For this analysis, a balanced dataset of roughly 1000 landslide occurences and 1000 landslide absences was used to train\test the logistic regression model, and 15 susceptibility factors were used as the explanatory variables. Before use in the model, these explanatory variables were first standardized using the formula:
 <div align="center">
@@ -15,7 +15,7 @@ First, a note on methods. For this analysis, a balanced dataset of roughly 1000 
 <a href="https://www.codecogs.com/eqnedit.php?latex=Standarized&space;Value&space;=&space;\frac{Value-Mean}{Standard&space;Deviation}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?Standarized&space;Value&space;=&space;\frac{Value-Mean}{Standard&space;Deviation}" title="Standarized Value = \frac{Value-Mean}{Standard Deviation}" /></a>
 <br>
 </div>
-This transformation standarizes the distributions of the covariates, and allows the regression coefficients to be used as an assesment of variable importance. Once standardization was complete a 10-fold cross-validation and an L1 (LASSO) regularization (lamnda=5) was used to train the model and asses its performance. Overall the cross-validated regressions produced an average AUC of 0.85 and a classification accuracy of 77%.
+This transformation standarizes the distributions of the covariates, and allows the regression coefficients to be used as an assesment of variable importance. Once standardization was complete, a 10-fold cross-validation and a L1 (LASSO) regularization (lamnda=5) was used to train the model and asses its performance. Overall the cross-validated regressions produced an average AUC of 0.85 and a classification accuracy of 77%.
 
 ## Model Coefficients and Significance
 The regression identified six significant susceptibility factors (see figure below):
@@ -38,5 +38,5 @@ My interpretaion of this data is that the significant landslide susceptibility f
 ## Principal Components Analysis
 Using a PCA analysis of the significant covariates, no discernible differences between the three major landslide classes was found.
 {% include plotly/lr_pca.html %}
-Nor was this the case when the data is viewed in terms of landslide size.
+Likewise, landslide size does not appear to effectively group the PCA resluts.
 {% include plotly/lr_pca_size.html %}
