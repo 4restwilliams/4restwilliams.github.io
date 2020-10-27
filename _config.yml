@@ -17,6 +17,7 @@ navbar-links:
   #Home: "index"
   #About Me: "/pages/aboutme"
   #Projects: "/pages/projects"
+  Presentations: "/pages/presentations"
   Short Reports: "/pages/figures"
   #Blog: "/pages/blog"
 #  Resources:
