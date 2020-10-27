@@ -17,8 +17,8 @@ navbar-links:
   #Home: "index"
   #About Me: "/pages/aboutme"
   #Projects: "/pages/projects"
-  Presentations: "/pages/presentations"
-  Short Reports: "/pages/figures"
+  Presentations: "/presentations"
+  Short Reports: "/figures"
   #Blog: "/pages/blog"
 #  Resources:
 #    - CV: '/pages/cv'
@@ -51,7 +51,7 @@ title-img: "/assets/img/profileCircle.png"
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "4restwilliams@gmial.com"
+  email: "forrestfwilliams@icloud.com"
   linkedin: forrest-williams-990586177
 #  github: 4restwilliams
 #  twitter: 4restwilliams
