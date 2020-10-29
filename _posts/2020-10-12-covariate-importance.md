@@ -19,12 +19,12 @@ This transformation standarizes the distributions of the covariates, and allows 
 
 ## Model Coefficients and Significance
 The regression identified six significant susceptibility factors (see figure below):
-1. Presence of Rangitikei Supergroup sandstones and mudstones (rangitikei)
-2. Slope (slope)
-3. The amount of alignment between bedding attitude and slope attitude (tobia)
-4. The amount of valley incision (incision)
-5. The roughness of the terrain (std_elev)
-6. Concave hillslopes (profc)
+1. Presence of Whanganui Basin sandstones and mudstones (Whanganui Basin)
+2. Slope (Slope)
+3. The amount of alignment between bedding attitude and slope attitude (Slope and Bedding Alignment)
+4. The amount of valley incision (Incision)
+5. The roughness of the terrain (Elevation (STD))
+6. Concave hillslopes (Profile Curvature)
 
 Overall the absolute values of the regression coefficients also decreased in this order, with the presence of Rangitikei Supergroup bedrock being much more influential than the other factors. The charts below are interactive so feel free to explore them!
 {% include plotly/lr_coefficient.html %}
